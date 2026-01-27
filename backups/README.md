@@ -1,62 +1,47 @@
-<h1 align="center" style="font-weight:1200;">
-
+<h1 align="center" style="font-weight:bold;">
   🔥 DevOps Backup & Rotation Automation Script
-
 </h1>
 
 <div align="center">
-
-![DevOps Banner](https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Rotation%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
-
+  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Rotation%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300" alt="DevOps Banner">
 </div>
 
 <div align="center">
-
-![DevOps Banner](https://svg-banners.vercel.app/api?type=wave&text1=Backup%20Rotation%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
-
+  <br />
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+  <img src="https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
+  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="Bash">
+  <img src="https://img.shields.io/badge/Automation-00B0FF?style=for-the-badge&logo=automation&logoColor=white" alt="Automation">
+  <img src="https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white" alt="DevOps">
 </div>
 
-<div align="center">
+---
 
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+## 🚀 Project Overview
+This project features a robust **Bash script** designed to automate the process of creating backups and managing rotation. It ensures that your data is safely archived while automatically cleaning up old backups to optimize disk space—a critical task for any DevOps Engineer managing EC2 instances or local Linux servers.
 
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+### 🛠 Features
+* **Automated Archiving:** Compresses specified directories into timestamped `.tar.gz` files.
+* **Rotation Logic:** Automatically deletes backups older than a defined number of days to prevent storage overflow.
+* **Error Handling:** Includes checks to verify directory existence and successful compression.
+* **Cron-Ready:** Designed to be easily scheduled via Crontab for hands-off automation.
 
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+---
 
-![Automation](https://img.shields.io/badge/Automation-00B0FF?style=for-the-badge&logo=robot&logoColor=white)
-
-![DevOps](https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white)
-
-</div>
-
-<div align="center">
-
+## 👤 Author
 **Jeyamurugan Nadar** *Aspiring DevOps & Cloud Engineer*
-  <p align="center">
 
-    <a href="https://github.com/nadarmurugan" target="_blank">
-
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-
-    </a>
-
-    <a href="https://linkedin.com/in/murugannadar/" target="_blank">
-
-      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-
-    </a>
-
-    <a href="mailto:murugannadar077@gmail.com">
-
-      <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-
-    </a>
-
-  </p>
-
-</div>
-
+<p align="left">
+  <a href="https://github.com/nadarmurugan" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://linkedin.com/in/murugannadar/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:murugannadar077@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</p>
 ---
 
 ## 📖 Overview
