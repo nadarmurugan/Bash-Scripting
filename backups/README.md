@@ -1,4 +1,4 @@
-<h3 align="center">🔥 DevOps Backup Automation Script</h3>
+<h1 align="center"><b>🔥 DevOps Backup Automation Script</b></h1>
 
 ![DevOps Banner](https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
