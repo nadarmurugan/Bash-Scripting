@@ -11,9 +11,9 @@
 ![DevOps](https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white)
 
 ## 📌 Author & Links
-**Created by:** Jeyamurugan Nadar  
-**GitHub:** @Jeyamurugan_Nadar (https://github.com/nadarmurugan)
-**LinkedIn:** Jeyamurugan(https://linkedin.com/in/murugannadar)  
+**Created by:** [Jeyamurugan Nadar]  
+**GitHub:** [@eyamurugan Nadar](https://github.com/nadarmurugan)  
+**LinkedIn:** [Jeyamurugan Nadar](https://linkedin.com/in/murugannadar/)  
 
 ---
 
