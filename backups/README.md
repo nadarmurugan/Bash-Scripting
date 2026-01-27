@@ -3,18 +3,21 @@
 </h1>
 
 
-![DevOps Banner](https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
+![DevOps Banner](https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20With%20Rotation%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
+<div align="center">
+
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Automation](https://img.shields.io/badge/Automation-00B0FF?style=for-the-badge&logo=robot&logoColor=white)
 ![DevOps](https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white)
 
-## 📌 Author & Links
-**Created by:** [Jeyamurugan Nadar]  
+</div>
+
+**Created by:** Jeyamurugan Nadar
 **GitHub:** [@eyamurugan Nadar](https://github.com/nadarmurugan)  
 **LinkedIn:** [Jeyamurugan Nadar](https://linkedin.com/in/murugannadar/)  
-
+**Contact:** murugannadar077@gmail.com  
 ---
 
 ## 📖 Overview
@@ -351,15 +354,11 @@ If this script helped you, please:
 ---
 
 ## 📞 Need Help?
-
-![Support](https://svg-banners.vercel.app/api?type=origin&text1=DevOps%20Automation%20Experts&text2=Available%20for%20Consulting&width=1000&height=150)
-
+**Created by:** Jeyamurugan Nadar
+**GitHub:** [@eyamurugan Nadar](https://github.com/nadarmurugan)  
+**LinkedIn:** [Jeyamurugan Nadar](https://linkedin.com/in/murugannadar/)  
 **Contact:** murugannadar077@gmail.com  
 
-
+![Footer](https://svg-banners.vercel.app/api?type=rainbow&text1=Automate%20Everything&text2=Backup%20with%20Confidence&width=1200&height=100)
 ---
 
-*Last updated: January 2024*  
-*Maintained with ❤️ for the DevOps community*
-
-![Footer](https://svg-banners.vercel.app/api?type=rainbow&text1=Automate%20Everything&text2=Backup%20with%20Confidence&width=1200&height=100)
