@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Rotation%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300" alt="DevOps Banner">
+  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300" alt="DevOps Banner">
 </div>
 
 <div align="center">
