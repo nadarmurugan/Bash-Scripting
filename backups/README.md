@@ -1,5 +1,5 @@
 <h1 align="center" style="font-weight:1200;">
-  🔥 DevOps Backup Automation Script
+  🔥 DevOps Backup & Rotation Automation Script
 </h1>
 
 
@@ -11,10 +11,9 @@
 ![DevOps](https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white)
 
 ## 📌 Author & Links
-**Created by:** [Your Name]  
-**GitHub:** [@yourusername](https://github.com/yourusername)  
-**LinkedIn:** [Your Profile](https://linkedin.com/in/yourprofile)  
-**Portfolio:** [yourportfolio.com](https://yourportfolio.com)
+**Created by:** Jeyamurugan Nadar  
+**GitHub:** @Jeyamurugan_Nadar (https://github.com/nadarmurugan)
+**LinkedIn:** Jeyamurugan(https://linkedin.com/in/murugannadar)  
 
 ---
 
@@ -355,9 +354,8 @@ If this script helped you, please:
 
 ![Support](https://svg-banners.vercel.app/api?type=origin&text1=DevOps%20Automation%20Experts&text2=Available%20for%20Consulting&width=1000&height=150)
 
-**Contact:** your.email@example.com  
-**Documentation:** [Full Docs](https://docs.example.com)  
-**Community:** [Discord/Slack Channel](https://your-community-link)
+**Contact:** murugannadar077@gmail.com  
+
 
 ---
 
