@@ -1,4 +1,4 @@
-<h1 align="center" style="font-weight:900;">
+<h1 align="center" style="font-weight:1200;">
   🔥 DevOps Backup Automation Script
 </h1>
 
