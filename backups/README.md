@@ -1,11 +1,11 @@
 <h3 align="center">🔥 DevOps Backup & Rotation Automation Script</h3>
 
-![DevOps Banner](https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300)
-<h3 align="center"> ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-<h3 align="center"> ![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
-<h3 align="center"> ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-<h3 align="center"> ![Automation](https://img.shields.io/badge/Automation-00B0FF?style=for-the-badge&logo=robot&logoColor=white)
-<h3 align="center"> ![DevOps](https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white)
+https://svg-banners.vercel.app/api?type=glitch&text1=Backup%2520Automation&text2=AWS%2520%257C%2520Linux%2520%257C%2520Bash%2520%257C%2520EC2&width=1200&height=300
+https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black
+https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white
+https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white
+https://img.shields.io/badge/Automation-00B0FF?style=for-the-badge&logo=robot&logoColor=white
+https://img.shields.io/badge/DevOps-00A98F?style=for-the-badge&logo=azure-devops&logoColor=white
 
 ## 📌 Author & Links
 **Created by:** Jeyamurugan Nadar 
