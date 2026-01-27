@@ -3,7 +3,7 @@
 </h1>
 
 <div align="center">
-  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation%20Script&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300" alt="DevOps Banner">
+  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Backup%20Automation&text2=AWS%20%7C%20Linux%20%7C%20Bash%20%7C%20EC2&width=1200&height=300" alt="DevOps Banner">
 </div>
 
 <div align="center">
@@ -378,11 +378,21 @@ If this script helped you, please:
 ---
 
 ## 📞 Need Help?
-**Created by:** Jeyamurugan Nadar
-**GitHub:** [@eyamurugan Nadar](https://github.com/nadarmurugan)  
-**LinkedIn:** [Jeyamurugan Nadar](https://linkedin.com/in/murugannadar/)  
-**Contact:** murugannadar077@gmail.com  
+**Jeyamurugan Nadar** *Aspiring DevOps & Cloud Engineer*
+
+<p align="left">
+  <a href="https://github.com/nadarmurugan" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
+  <a href="https://linkedin.com/in/murugannadar/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="mailto:murugannadar077@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+</p>
 
 ![Footer](https://svg-banners.vercel.app/api?type=rainbow&text1=Automate%20Everything&text2=Backup%20with%20Confidence&width=1200&height=100)
+
 ---
 
