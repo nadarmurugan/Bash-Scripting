@@ -1,72 +1,95 @@
-# 🚀 Automated Bash Backup & Lifecycle Management
+🚀 Automated Bash Backup & Lifecycle Management
+<p align="center"> <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" /> <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" /> <img src="https://img.shields.io/badge/Automation-007ACC?style=for-the-badge&logo=github-actions&logoColor=white" /> <img src="https://img.shields.io/badge/Maintenance-FF69B4?style=for-the-badge&logo=buildkite&logoColor=white" /> </p>
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=DevOps%20Automation&fontSize=70&animation=fadeIn" />
-</p>
+🛠 Project Purpose
+In modern DevOps environments, log-bloat and unmanaged artifacts are "silent killers" of disk space. This script serves as a Storage Lifecycle Manager. It automates the compression of high-priority directories and enforces a strict Retention Policy, ensuring your CI/CD pipelines or production servers remain lean and stable.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
-  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
-  <img src="https://img.shields.io/badge/Automation-007ACC?style=for-the-badge&logo=github-actions&logoColor=white" />
-  <img src="https://img.shields.io/badge/DevOps-2496ED?style=for-the-badge&logo=azure-devops&logoColor=white" />
-  <img src="https://img.shields.io/badge/Maintenance-FF69B4?style=for-the-badge&logo=buildkite&logoColor=white" />
-</p>
+📂 The Script (backup.sh)
+Copy the code below into a file named backup.sh:
 
----
+Bash
+#!/bin/bash
 
-## 🛠 Project Purpose
+# ==============================================================================
+# DEVOPS BACKUP & ROTATION SCRIPT
+# ==============================================================================
+# Description: Compresses a directory and maintains only the last 3 backups.
+# Usage: ./backup.sh <path_to_directory>
+# ==============================================================================
 
-In a DevOps CI/CD pipeline, managing logs and artifacts is crucial. This script acts as a **Storage Lifecycle Manager**. It automates the backup of high-priority directories and implements a **Retention Policy** to ensure your server never runs out of disk space due to log-bloat or redundant backups.
+SOURCE_DIR=$1
+BACKUP_DIR="./backups"
+TIMESTAMP=$(date '+%Y-%m-%d_%H-%M-%S')
+RETENTION_COUNT=3
 
+# 1. Validation: Ensure the user provided a directory
+if [ -z "$SOURCE_DIR" ]; then
+    echo "❌ Error: No directory specified."
+    echo "Usage: $0 /path/to/source"
+    exit 1
+fi
 
+if [ ! -d "$SOURCE_DIR" ]; then
+    echo "❌ Error: Directory '$SOURCE_DIR' does not exist."
+    exit 1
+fi
 
----
+# 2. Preparation: Create backup folder if it doesn't exist
+mkdir -p "$BACKUP_DIR"
 
-## 💻 Technical Breakdown
+# 3. Compression: Generate the zip file
+BACKUP_NAME="backup_$TIMESTAMP.zip"
+echo "📦 Starting backup of: $SOURCE_DIR"
 
-The script is modularized into specialized functions to follow the **DRY (Don't Repeat Yourself)** principle:
+zip -r "$BACKUP_DIR/$BACKUP_NAME" "$SOURCE_DIR" > /dev/null
 
-### 1. Source Validation
-The script first performs a conditional check `[ ! -d "$1" ]`. If the provided path isn't a directory or is missing, it terminates safely. This prevents the script from attempting to backup non-existent data.
+if [ $? -eq 0 ]; then
+    echo "✅ Backup completed: $BACKUP_NAME"
+else
+    echo "❌ Backup failed!"
+    exit 1
+fi
 
-### 2. Automated Compression
-Using the `zip -r` command, the script recursively bundles the entire directory. 
-* **Timestamping:** It uses `date '+%Y-%m-%d_%H-%M-%S'` to ensure every backup is unique down to the second, allowing for precise Point-in-Time recovery.
+# 4. Lifecycle Management: Rotate old backups (Keep only last 3)
+echo "🔄 Running retention policy (Keeping last $RETENTION_COUNT backups)..."
 
-### 3. Retention & Rotation (The DevOps Way)
-This is the most critical part of the automation:
-* It stores all `.zip` files in an array.
-* It sorts them by modification time (`ls -t`).
-* If the count exceeds **3**, it slices the array and uses `rm -f` to purge the oldest versions.
+# List files by time (newest first), skip the first 3, and remove the rest
+ls -t "$BACKUP_DIR"/backup_*.zip | tail -n +$((RETENTION_COUNT + 1)) | xargs -r rm -f
 
----
+echo "✨ Storage optimized. Maintenance complete."
+💻 Technical Breakdown
+The script follows the DRY (Don't Repeat Yourself) principle and implements industry-standard error handling:
 
-## 🚀 Quick Start
+1. Source Validation
+Using [ ! -d "$1" ], the script verifies the target exists before proceeding. This prevents the "empty archive" bug and ensures your automation doesn't fail silently.
 
-### Prerequisites
+2. Point-in-Time Recovery
+By using date '+%Y-%m-%d_%H-%M-%S', every backup is unique to the second. This allows DevOps engineers to roll back to specific moments during an incident.
 
+3. Automated Rotation (The "DevOps" Way)
+Manual cleanup is a liability. The script uses a combination of ls -t (sort by time) and tail to identify and rm files that fall outside the retention window. This keeps your /var/log or /data partitions from hitting 100% utilization.
+
+🚀 Quick Start
+Prerequisites
+Ensure you have zip installed on your Linux machine:
+
+Bash
+sudo apt update && sudo apt install zip -y
 Execution
 Bash
-# 1. Clone it
-git clone [https://github.com/your-username/devops-backup-tool.git](https://github.com/your-username/devops-backup-tool.git)
-
-# 2. Permissions
+# 1. Give execution rights
 chmod +x backup.sh
 
-# 3. Run
+# 2. Run the backup
 ./backup.sh /your/target/directory
+📈 Optimization Roadmap
+[ ] Cloud Integration: Add aws s3 cp to move backups to off-site storage.
 
-📈 Optimization Roadmap (CI/CD)
-[ ] Add S3 Bucket integration for off-site storage.
+[ ] Monitoring: Integrate Slack/Discord webhooks for success/failure alerts.
 
-[ ] Implement Discord/Slack Webhook notifications on success.
-
-[ ] Add encryption for sensitive data backups.
+[ ] Security: Implement gpg encryption for sensitive data backups.
 
 🤝 Connect & Collaborate
-<p align="left"> <a href="https://www.google.com/search?q=https://linkedin.com/in/yourusername"><img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite" /></a> <a href="https://github.com/yourusername"><img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-100000%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" /></a> </p>
+<p align="left"> <a href="https://linkedin.com/in/yourusername"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a> <a href="https://github.com/yourusername"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" /></a> </p>
 
 Developed for efficiency, stability, and scale.
-Make sure you have `zip` installed:
-```bash
-sudo apt update && sudo apt install zip -y
