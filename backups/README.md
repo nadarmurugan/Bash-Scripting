@@ -1,194 +1,70 @@
-Absolutely — here’s a **clean, professional, copy-paste ready README** with **ASCII banners + complete Bash script**. Perfect for **GitHub, LinkedIn posts, portfolios, and interviews** 💪🐧
+# 📂 Automated Directory Backup & Rotation Script
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" />
+  <img src="https://img.shields.io/badge/Shell_Script-121011?style=for-the-badge&logo=gnu-bash&logoColor=white" />
+  <img src="https://img.shields.io/badge/DevOps-2496ED?style=for-the-badge&logo=azure-devops&logoColor=white" />
+  <img src="https://img.shields.io/badge/Open_Source-61DAFB?style=for-the-badge&logo=github&logoColor=black" />
+</p>
 
 ---
 
-```text
-🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧
-        BASH BACKUP & ROTATION SCRIPT
-     Simple • Automatic • Beginner-Friendly
-🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧🐧
-```
+## 📝 Overview
 
-# 🐧 Bash Backup & Rotation Script
+This **Bash script** is a lightweight DevOps utility designed to automate the process of backing up critical directories. It doesn't just copy files; it compresses them and manages storage lifecycle through a built-in rotation policy.
 
-🚀 **Simple Backup Automation for Linux**
 
-A **beginner-friendly Bash script** that creates **timestamped ZIP backups** of a directory and **automatically rotates old backups** to save disk space.
 
-Perfect for **Linux admins, DevOps freshers, interns, and automation practice**.
-
----
-
-## 📌 Features
-
-✅ Takes directory path as argument
-✅ Creates ZIP backup with date & time
-✅ Stores backups in the same directory
-✅ Keeps only the **latest 3 backups**
-✅ Automatically deletes old backups
-✅ Safe, simple, and production-style logic
-
----
-
-## 📂 Backup File Format
-
-```text
-backup_YYYY-MM-DD_HH-MM-SS.zip
-```
-
-### Example:
-
-```text
-backup_2026-01-27_14-30-12.zip
-```
+### 🚀 Key Features
+* **Smart Compression:** Uses `zip` to archive directories, saving significant disk space.
+* **Unique Timestamps:** Every backup is labeled with `YYYY-MM-DD_HH-MM-SS` to prevent naming conflicts.
+* **Auto-Rotation (Retention):** Automatically keeps only the **last 3 backups**, deleting the oldest ones to prevent storage overflow.
+* **Safety Checks:** Includes validation logic to ensure the provided source path is a valid directory.
 
 ---
 
 ## 🛠️ Requirements
 
-* Linux / Unix OS
-* Bash shell
-* `zip` package
-
-### Install zip (if not installed)
-
-```bash
-sudo apt install zip -y
-```
+* **OS:** Linux / Unix-based system.
+* **Utility:** `zip` installed (Install via `sudo apt install zip` if missing).
 
 ---
 
-## 🚀 Usage
+## 🚀 How to Use
 
-```bash
-chmod +x backup.sh
-./backup.sh /path/to/directory
-```
+1.  **Clone the Repository:**
+    ```bash
+    git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+    cd your-repo-name
+    ```
 
-### Example:
+2.  **Grant Execution Permission:**
+    ```bash
+    chmod +x backup.sh
+    ```
 
-```bash
-./backup.sh /var/www/html
-```
-
----
-
-## 🔄 Backup Rotation Logic
-
-* Keeps **only latest 3 backups**
-* Deletes older ZIP files automatically
-* Prevents disk space overuse
-* Sorted using timestamps (safe & reliable)
+3.  **Execute the Backup:**
+    ```bash
+    ./backup.sh /path/to/source_directory
+    ```
 
 ---
 
-## 📜 backup.sh (Complete Script)
+## ⚙️ The Script Logic
 
-```bash
-#!/bin/bash
-
-# ===============================
-# Bash Backup & Rotation Script
-# Author: Jeymurugan Nadar
-# ===============================
-
-# Check if directory argument is provided
-if [ -z "$1" ]; then
-  echo "❌ Error: Please provide a directory path"
-  echo "Usage: ./backup.sh /path/to/directory"
-  exit 1
-fi
-
-SOURCE_DIR="$1"
-
-# Check if directory exists
-if [ ! -d "$SOURCE_DIR" ]; then
-  echo "❌ Error: Directory does not exist!"
-  exit 1
-fi
-
-# Timestamp for backup file
-TIMESTAMP=$(date +"%Y-%m-%d_%H-%M-%S")
-BACKUP_FILE="backup_$TIMESTAMP.zip"
-
-# Create backup
-zip -r "$BACKUP_FILE" "$SOURCE_DIR" >/dev/null
-
-if [ $? -eq 0 ]; then
-  echo "✅ Backup created: $BACKUP_FILE"
-else
-  echo "❌ Backup failed!"
-  exit 1
-fi
-
-# Backup rotation - keep only last 3 backups
-BACKUP_COUNT=$(ls -1 backup_*.zip 2>/dev/null | wc -l)
-
-if [ "$BACKUP_COUNT" -gt 3 ]; then
-  ls -1t backup_*.zip | tail -n +4 | xargs rm -f
-  echo "🗑️ Old backups removed (keeping latest 3)"
-fi
-
-echo "🎉 Backup process completed successfully!"
-```
+1.  **Input Check:** Verifies if a directory path was passed as an argument.
+2.  **Creation:** Runs `zip -r` on the source folder and generates a `.zip` file.
+3.  **Cleanup:** Scans the backup directory, counts the files, and removes the $n-3$ oldest files.
 
 ---
 
-## 👨‍💻 Author
+## 🤝 Connect with Me
 
-**Jeymurugan Nadar**
-DevOps & Linux Enthusiast | Fresher | Automation Learner
-
-🔗 GitHub: [https://github.com/your-username](https://github.com/your-username)
-🔗 LinkedIn: [https://www.linkedin.com/in/your-profile](https://www.linkedin.com/in/your-profile)
-🔗 Portfolio: [https://your-portfolio-link](https://your-portfolio-link)
+<p align="left">
+<a href="https://linkedin.com/in/yourusername" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="yourusername" height="30" width="40" /></a>
+<a href="https://github.com/yourusername" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="yourusername" height="30" width="40" /></a>
+</p>
 
 ---
 
-## ⭐ Why This Script?
-
-This project demonstrates:
-
-✔ Bash scripting fundamentals
-✔ Argument validation
-✔ Real-world automation logic
-✔ Backup & rotation concept
-✔ DevOps-ready scripting style
-
-**Great for:**
-
-* GitHub portfolios
-* DevOps interviews
-* Internship projects
-* Linux practice
-
----
-
-## 📜 License
-
-Free to use for **learning, personal projects, and practice**.
-
----
-
-```text
-🚀 Want Upgrades?
-────────────────
-☑ Email alerts
-☑ Cron job automation
-☑ Logging support
-☑ Dry-run mode
-☑ Interview Q&A explanation
-
-Just tell me 💪🐧
-```
-
----
-
-If you want, I can also:
-
-* Convert this into a **GitHub repo structure**
-* Add **cron job + log file**
-* Create a **LinkedIn post version**
-* Add **interview explanation notes**
-
-Just say the word 🔥
+*Made with ❤️ for the DevOps Community.*
