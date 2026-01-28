@@ -1,6 +1,10 @@
-<h1 align="center">
-  <b>🚀 ASPIRING CLOUD & DEVOPS JOURNEY</b><br>
-  <b>🖥️ BASH AUTOMATION HUB</b>
+<h1 align="center" style="
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-weight: 900;
+  font-size: 48px;
+  letter-spacing: 1px;
+">
+  🚀 Aspiring Cloud & DevOps Engineer – Bash Scripts
 </h1>
 
 <div align="center">
@@ -177,10 +181,50 @@ chmod +x backup_with_rotation.sh
     </tr>
   </table>
 </div>
+---
+
 
 ## 🧠 Core DevOps & CloudOps Concepts I'm Mastering
 
 I am focusing on mastering the fundamental pillars of DevOps to build a robust, production-ready skillset.
+
+
+### <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg)" width="30" height="30" /> **Linux & Scripting Foundations**
+
+* **Automation:** Writing idempotent Bash scripts for repetitive operational tasks and scheduling via `Cron`.
+* **Process Management:** Monitoring system resources (`top`, `htop`) and managing background services.
+* **File System & Security:** Mastering Linux permissions, ownership, and SSH key-based authentication.
+* **Networking:** Understanding the OSI model, CIDR notation, and managing firewalls with `iptables/ufw`.
+
+### <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg)" width="35" height="35" /> **Cloud Infrastructure (AWS)**
+
+* **Compute & Scaling:** Deploying EC2 instances with custom User Data and managing Auto-Scaling Groups.
+* **Identity & Access (IAM):** Implementing the **Principle of Least Privilege** using Roles and Policies.
+* **Storage:** Managing data persistence and lifecycle policies using S3, EBS, and EFS.
+* **VPC Architecture:** Designing secure networks with Public/Private subnets, NAT Gateways, and Route Tables.
+
+### <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg)" width="30" height="30" /> <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg)" width="30" height="30" /> **Containerization & Orchestration**
+
+* **Docker:** Building optimized multi-stage `Dockerfiles` and managing image layers to reduce size.
+* **Networking & Volumes:** Creating custom Docker networks and persistent data volumes for stateful apps.
+* **Kubernetes:** Understanding Pod lifecycle, Deployments, Services, and Ingress.
+* **GitOps:** Implementing declarative configuration management to maintain the "Desired State."
+
+### <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg)" width="30" height="30" /> <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg)" width="30" height="30" /> <img src="[https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg](https://www.google.com/search?q=https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg)" width="30" height="30" /> **CI/CD & Observability**
+
+* **Pipelines:** Automating Build-Test-Deploy cycles using GitLab CI and GitHub Actions.
+* **Quality & Security:** Integrating **SonarQube** for code analysis and **Trivy** for vulnerability scanning.
+* **Monitoring:** Collecting system/application metrics with Prometheus and building Grafana dashboards.
+* **Alerting:** Setting up threshold-based alerts to detect and resolve issues quickly.
+
+---
+
+
+
+
+
+
+
 
 ### 🐧 **Linux & Scripting Foundations**
 
