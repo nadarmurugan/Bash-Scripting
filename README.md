@@ -69,6 +69,8 @@ I am currently a student building my skills in **CloudOps** and **DevOps**. I am
 * ⏰ **Scheduling**: Using `crontab` for hands-off operational tasks.
 * 🛡️ **Error Handling**: Writing robust scripts that don't fail in production.
 
+---
+
 ### 📅 **The DevOps Growth Roadmap**
 
 | Phase | Technology | Status | Key Scripts Planned |
@@ -82,9 +84,11 @@ I am currently a student building my skills in **CloudOps** and **DevOps**. I am
 
 ---
 
+
+
 ## 🚀 Featured Project: Backup with Rotation
 
-### 📁 [Backup with Rotation Script](https://www.google.com/search?q=./backup_with_rotations/)
+### 📁 [Backup with Rotation Script]([https://www.google.com/search?q=./backup_with_rotations/](https://github.com/nadarmurugan/Bash-Scripting/backups with rotations/)
 
 This script solves a common real-world problem: **Disk space exhaustion due to unmanaged backups.**
 
@@ -110,23 +114,6 @@ chmod +x backup_with_rotation.sh
 ./backup_with_rotation.sh /var/www/html
 
 ```
-
----
-
-## 🏗️ Future Tech Stack (Learning in Progress)
-
-I am actively studying these technologies to build a complete CloudOps toolkit:
-
-<p align="left">
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/AWS-232F3E%3Fstyle%3Dfor-the-badge%26logo%3Damazon-aws%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Docker-2496ED%3Fstyle%3Dfor-the-badge%26logo%3Ddocker%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Kubernetes-326CE5%3Fstyle%3Dfor-the-badge%26logo%3Dkubernetes%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/GitLab_CI-E24329%3Fstyle%3Dfor-the-badge%26logo%3Dgitlab%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Prometheus-E6522C%3Fstyle%3Dfor-the-badge%26logo%3Dprometheus%26logoColor%3Dwhite" />
-<img src="https://www.google.com/search?q=https://img.shields.io/badge/Grafana-F46800%3Fstyle%3Dfor-the-badge%26logo%3Dgrafana%26logoColor%3Dwhite" />
-</p>
-
----
 
 
 **⏰ Cron Automation Example:**
@@ -187,15 +174,42 @@ I am actively studying these technologies to build a complete CloudOps toolkit:
     </tr>
   </table>
 </div>
+---
+---
 
-### 📚 Learning Resources I'm Using:
-- **AWS Skill Builder** - Cloud fundamentals & certification prep
-- **KodeKloud** - Hands-on Docker & Kubernetes labs
-- **Linux Academy** - Bash scripting & system administration
-- **GitLab Documentation** - CI/CD pipeline creation
-- **Prometheus & Grafana** - Official documentation & tutorials
-- **YouTube** - TechWorld with Nana, FreeCodeCamp, DevOps Journey
+## 🧠 Core DevOps & CloudOps Concepts I'm Mastering
 
+I am focusing on mastering the fundamental pillars of DevOps to build a robust, production-ready skillset.
+
+### 🐧 **Linux & Scripting Foundations**
+
+* **Automation:** Writing idempotent Bash scripts for repetitive operational tasks and scheduling via `Cron`.
+* **Process Management:** Monitoring system resources (`top`, `htop`) and managing background services.
+* **File System & Security:** Mastering Linux permissions, ownership, and SSH key-based authentication.
+* **Networking:** Understanding the OSI model, CIDR notation, and managing firewalls with `iptables/ufw`.
+
+### ☁️ **Cloud Infrastructure (AWS)**
+
+* **Compute & Scaling:** Deploying EC2 instances with custom User Data and managing Auto-Scaling Groups.
+* **Identity & Access (IAM):** Implementing the **Principle of Least Privilege** using Roles and Policies.
+* **Storage:** Managing data persistence and lifecycle policies using S3, EBS, and EFS.
+* **VPC Architecture:** Designing secure networks with Public/Private subnets, NAT Gateways, and Route Tables.
+
+### 🐳 **Containerization & Orchestration**
+
+* **Docker:** Building optimized multi-stage `Dockerfiles` and managing image layers to reduce size.
+* **Networking & Volumes:** Creating custom Docker networks and persistent data volumes for stateful apps.
+* **Kubernetes:** Understanding Pod lifecycle, Deployments, Services (ClusterIP/NodePort), and Ingress.
+* **GitOps:** Implementing declarative configuration management to maintain the "Desired State."
+
+### 🔄 **CI/CD & Observability**
+
+* **Pipelines:** Automating Build-Test-Deploy cycles using GitLab CI and GitHub Actions.
+* **Quality & Security:** Integrating **SonarQube** for code analysis and **Trivy** for vulnerability scanning.
+* **Monitoring:** Collecting system/application metrics with Prometheus and building Grafana dashboards.
+* **Alerting:** Setting up threshold-based alerts to detect and resolve issues before they impact users.
+
+---
 ---
 ---
 
@@ -276,5 +290,3 @@ It motivates me to keep learning and sharing.
 
 ---
 
-**Last Updated:** March 2024 | **Current Focus:** Bash Scripting & Linux Automation  
-**Next Milestone:** AWS CLI Automation Scripts
