@@ -95,7 +95,7 @@ I am currently a student building my skills in **CloudOps** and **DevOps**. I am
 
 ## 🚀 Featured Project: Backup with Rotation
 
-### 📁 [Backup with Rotation Script]([https://github.com/nadarmurugan/Bash-Scripting/backups with rotations/])
+### 📁 [Backup with Rotation Script](https://github.com/nadarmurugan/Bash-Scripting/tree/main/backups%20with%20rotations)
 
 This script solves a common real-world problem: **Disk space exhaustion due to unmanaged backups.**
 
@@ -181,7 +181,8 @@ chmod +x backup_with_rotation.sh
     </tr>
   </table>
 </div>
----
+
+
 
 
 ## 🧠 Core DevOps & CloudOps Concepts I'm Mastering
