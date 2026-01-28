@@ -1,4 +1,7 @@
-# 🚀 Aspiring Cloud & DevOps Learning Journey | Bash Automation Hub  - Bash Scripting Repository
+<h1 align="center">
+  <b>🚀 ASPIRING CLOUD & DEVOPS JOURNEY</b><br>
+  <b>🖥️ BASH AUTOMATION HUB</b>
+</h1>
 
 <div align="center">
   <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Bash%20Scripting%20&%20Automation&text2=Aspiring%20CloudOps%20Engineer&width=1200&height=400" alt="DevOps Banner">
@@ -88,7 +91,7 @@ I am currently a student building my skills in **CloudOps** and **DevOps**. I am
 
 ## 🚀 Featured Project: Backup with Rotation
 
-### 📁 [Backup with Rotation Script]([https://www.google.com/search?q=./backup_with_rotations/](https://github.com/nadarmurugan/Bash-Scripting/backups with rotations/)
+### 📁 [Backup with Rotation Script]([https://github.com/nadarmurugan/Bash-Scripting/backups with rotations/])
 
 This script solves a common real-world problem: **Disk space exhaustion due to unmanaged backups.**
 
@@ -174,8 +177,6 @@ chmod +x backup_with_rotation.sh
     </tr>
   </table>
 </div>
----
----
 
 ## 🧠 Core DevOps & CloudOps Concepts I'm Mastering
 
@@ -208,9 +209,6 @@ I am focusing on mastering the fundamental pillars of DevOps to build a robust, 
 * **Quality & Security:** Integrating **SonarQube** for code analysis and **Trivy** for vulnerability scanning.
 * **Monitoring:** Collecting system/application metrics with Prometheus and building Grafana dashboards.
 * **Alerting:** Setting up threshold-based alerts to detect and resolve issues before they impact users.
-
----
----
 ---
 
 ## 🤝 How to Navigate This Repository
