@@ -1,10 +1,3 @@
-It’s a great idea to document your journey! "Learning in public" is one of the best ways to get noticed by DevOps recruiters. Since you are just starting and plan to add more folders as you learn, I've designed this `README.md` to look like a **growing roadmap**.
-
-It highlights that you are currently mastering Bash (starting with your backup script) and that you are on a path to becoming a CloudOps/DevOps Engineer.
-
-Copy the code below for your root `README.md`:
-
-```markdown
 <h1 align="center" style="font-weight:bold;">
   🚀 My DevOps & CloudOps Learning Journey
 </h1>
