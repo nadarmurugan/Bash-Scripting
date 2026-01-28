@@ -42,6 +42,7 @@ I'm actively learning and building projects in:
 ## 🛠️ Current Project Status: **Phase 1 (Bash Mastery)**
 
 I am currently focusing on core Linux automation. Each new script I learn will be categorized into its own folder.
+This is looking very solid! It reads like a professional "DevOps Portfolio in Progress." I have refined the structure, added a more dynamic feel, and included those specific banners you wanted for the "Coming Soon" tech stack.
 
 ### 📂 Repository Structure
 ```bash
@@ -49,57 +50,84 @@ bash-scripting/
 ├── backup_with_rotations/   # ✅ CURRENTLY ACTIVE
 │   ├── backup_with_rotation.sh
 │   └── README.md
-├── aws_automation/          # ⏳ Coming Soon...
-├── monitoring_alerts/       # ⏳ Coming Soon...
-└── docker_utils/            # ⏳ Coming Soon...
+├── aws_automation/          # ⏳ Coming Soon... (EC2, S3, IAM)
+├── monitoring_alerts/       # ⏳ Coming Soon... (Disk, CPU, Memory)
+└── docker_utils/            # ⏳ Coming Soon... (Cleanup & Management)
+
+```
+
 ---
 
 ## 🎯 Current Learning Focus & Timeline
 
-### ✅ **Currently Working On: Phase 1 - Bash Foundations**
-- 🔄 **Backup & Rotation Automation** (Completed first script ✓)
-- 📚 **Advanced Bash Scripting** patterns and best practices
-- 🐧 **Linux System Administration** core tasks
-- ⏰ **Cron Job Scheduling** and automation
+I am currently a student building my skills in **CloudOps** and **DevOps**. I am following a structured path to master automation from the OS level up to the Cloud.
 
-### 📅 **Learning Roadmap:**
+### ✅ **Active Focus: Phase 1 — Bash & Linux Foundations**
 
-| Phase | Technology | Status | Planned Scripts |
-|-------|------------|--------|-----------------|
-| **1** | **Bash & Linux** | ✅ Active | Backup scripts, system monitoring, log analysis |
-| **2** | **AWS Cloud** | ⏳ Coming Soon | EC2 management, S3 backups, IAM user automation |
-| **3** | **Docker** | ⏳ Coming Soon | Container cleanup, image management, Docker helpers |
-| **4** | **Kubernetes** | ⏳ Coming Soon | Pod management, resource monitoring, K8s operations |
-| **5** | **CI/CD** | ⏳ Coming Soon | GitLab CI pipelines, Jenkins automation, deployment |
-| **6** | **Monitoring** | ⏳ Coming Soon | Prometheus exporters, Grafana dashboards, alerts |
+* 🔄 **Backup & Rotation Automation**: Mastering file-system management.
+* 🐧 **Linux Admin**: User management, permissions, and process monitoring.
+* ⏰ **Scheduling**: Using `crontab` for hands-off operational tasks.
+* 🛡️ **Error Handling**: Writing robust scripts that don't fail in production.
+
+### 📅 **The DevOps Growth Roadmap**
+
+| Phase | Technology | Status | Key Scripts Planned |
+| --- | --- | --- | --- |
+| **1** | **Bash & Linux** | 🟢 Active | Backup scripts, log analysis, user audits |
+| **2** | **AWS Cloud** | 🟡 Next Up | EC2 snapshots, S3 bucket syncing, IAM rotation |
+| **3** | **Docker** | ⏳ Planned | Container cleanup, image pruning, Docker Compose helpers |
+| **4** | **Kubernetes** | ⏳ Planned | K8s health checks, pod restarts, config audits |
+| **5** | **CI/CD** | ⏳ Planned | GitLab CI/CD automation, GitHub Actions |
+| **6** | **Monitoring** | ⏳ Planned | Prometheus metrics collection, Grafana alerts |
 
 ---
 
 ## 🚀 Featured Project: Backup with Rotation
 
-### 📁 `backups/backup_with_rotation.sh`
+### 📁 [Backup with Rotation Script](https://www.google.com/search?q=./backup_with_rotations/)
 
-**🎯 What This Script Does:**
-- Creates timestamped `.zip` backups of any directory
-- Automatically rotates old backups (keeps last 3 by default)
-- Includes comprehensive error handling
-- Ready for cron job scheduling
-- Production-grade with clean logging
+This script solves a common real-world problem: **Disk space exhaustion due to unmanaged backups.**
 
-**🛠️ Technologies Demonstrated:**
-- ✅ Bash scripting fundamentals
-- ✅ File system operations
-- ✅ Date/time manipulation
-- ✅ Conditional logic and loops
-- ✅ Function definitions
-- ✅ Exit codes and error handling
+**🎯 Core Functionality:**
 
-**📋 Usage:**
+* **Automated Compression:** Creates timestamped `.zip` archives of any source directory.
+* **Smart Rotation:** Implements a retention policy (default: keeps last 3) to prevent storage overflow.
+* **Validation:** Checks if the source directory exists before running to prevent errors.
+* **Logging:** Provides clean, human-readable output for troubleshooting.
+
+**🛠️ Skills Demonstrated:**
+
+* ✅ Scripting Logic (Loops & Arrays)
+* ✅ File System Operations
+* ✅ Process Automation (Cron compatibility)
+* ✅ Production-grade Error Handling
+
+**📋 Quick Start:**
+
 ```bash
-cd backups
+cd backup_with_rotations
 chmod +x backup_with_rotation.sh
-./backup_with_rotation.sh /path/to/your/directory
+./backup_with_rotation.sh /var/www/html
+
 ```
+
+---
+
+## 🏗️ Future Tech Stack (Learning in Progress)
+
+I am actively studying these technologies to build a complete CloudOps toolkit:
+
+<p align="left">
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/AWS-232F3E%3Fstyle%3Dfor-the-badge%26logo%3Damazon-aws%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Docker-2496ED%3Fstyle%3Dfor-the-badge%26logo%3Ddocker%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Kubernetes-326CE5%3Fstyle%3Dfor-the-badge%26logo%3Dkubernetes%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/GitLab_CI-E24329%3Fstyle%3Dfor-the-badge%26logo%3Dgitlab%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Prometheus-E6522C%3Fstyle%3Dfor-the-badge%26logo%3Dprometheus%26logoColor%3Dwhite" />
+<img src="https://www.google.com/search?q=https://img.shields.io/badge/Grafana-F46800%3Fstyle%3Dfor-the-badge%26logo%3Dgrafana%26logoColor%3Dwhite" />
+</p>
+
+---
+
 
 **⏰ Cron Automation Example:**
 ```bash
@@ -169,23 +197,6 @@ chmod +x backup_with_rotation.sh
 - **YouTube** - TechWorld with Nana, FreeCodeCamp, DevOps Journey
 
 ---
-
-## 📈 My Learning Journey Timeline
-
-```mermaid
-timeline
-    title My DevOps Evolution Path
-    section Phase 1: Foundations
-        Jan - Feb 2026 : Bash Scripting Basics : Linux System Admin
-        Mar 2026 : Backup Automation Scripting
-    section Phase 2: Cloud & Containers
-        Apr - Jun 2026 : AWS Fundamentals : Docker Essentials
-        Jul - Aug 2026 : Kubernetes Basics : Cloud Automation
-    section Phase 3: Advanced DevOps
-        Sep - Oct 2026 : CI/CD Pipelines : Infrastructure as Code
-        Nov - Dec 2026 : Monitoring Stack : Portfolio Projects
-```
-
 ---
 
 ## 🤝 How to Navigate This Repository
