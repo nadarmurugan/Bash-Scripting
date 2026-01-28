@@ -1,11 +1,7 @@
-# 🚀 Aspiring Cloud & DevOps Engineer - Bash Scripting Repository
-
-<h1 align="center" style="font-weight:bold;">
-  ☁️ Cloud & DevOps Learning Journey | Bash Automation Hub
-</h1>
+# 🚀 Aspiring Cloud & DevOps Learning Journey | Bash Automation Hub  - Bash Scripting Repository
 
 <div align="center">
-  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Aspiring%20CloudOps%20%26%20DevOps%20Engineer&text2=Learning%20in%20Public%20-%20Hands%20on%20Automation&width=1200&height=400" alt="DevOps Banner">
+  <img src="https://svg-banners.vercel.app/api?type=glitch&text1=Bash%20Scripting%20&%20Automation&text2=Aspiring%20CloudOps%20Engineer&width=1200&height=400" alt="DevOps Banner">
 </div>
 
 <div align="center">
@@ -43,37 +39,19 @@ I'm actively learning and building projects in:
 
 ---
 
-## 📁 Repository Structure - My Learning Progress
+## 🛠️ Current Project Status: **Phase 1 (Bash Mastery)**
 
-```
+I am currently focusing on core Linux automation. Each new script I learn will be categorized into its own folder.
+
+### 📂 Repository Structure
+```bash
 bash-scripting/
-│
-├── 📂 backups/                           # ✅ CURRENTLY ACTIVE - First Project
-│   ├── backup_with_rotation.sh          # My first production-grade script
-│   ├── README.md                        # Detailed documentation
-│   └── cron_examples.txt               # Scheduling examples
-│
-├── 📂 aws/                              # ⏳ Coming Soon - AWS Automation
-│   └── (AWS CLI scripts for EC2, S3, IAM, CloudWatch)
-│
-├── 📂 docker/                           # ⏳ Coming Soon - Docker Automation
-│   └── (Container management, image building, Docker Compose)
-│
-├── 📂 kubernetes/                       # ⏳ Coming Soon - K8s Automation
-│   └── (Pod management, deployments, cluster operations)
-│
-├── 📂 monitoring/                       # ⏳ Coming Soon - Monitoring Scripts
-│   └── (Prometheus metrics, Grafana dashboards, alerting)
-│
-├── 📂 ci-cd/                            # ⏳ Coming Soon - CI/CD Automation
-│   └── (GitLab CI, Jenkins, GitHub Actions scripts)
-│
-└── 📂 linux-system-admin/               # ⏳ Coming Soon - Linux Admin
-    └── (User management, security, updates, log analysis)
-```
-
-**Note:** Currently focused on **Phase 1: Bash Mastery**. I've started with backup automation and will add scripts for each technology as I progress through my learning roadmap.
-
+├── backup_with_rotations/   # ✅ CURRENTLY ACTIVE
+│   ├── backup_with_rotation.sh
+│   └── README.md
+├── aws_automation/          # ⏳ Coming Soon...
+├── monitoring_alerts/       # ⏳ Coming Soon...
+└── docker_utils/            # ⏳ Coming Soon...
 ---
 
 ## 🎯 Current Learning Focus & Timeline
@@ -137,7 +115,7 @@ chmod +x backup_with_rotation.sh
   <table>
     <tr>
       <td align="center">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" width="60" height="60" alt="AWS"/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="60" height="60" alt="AWS"/>
         <br><strong>AWS Cloud</strong>
         <br>EC2, S3, IAM, VPC
       </td>
@@ -196,22 +174,16 @@ chmod +x backup_with_rotation.sh
 
 ```mermaid
 timeline
-    title My DevOps Learning Path
-    section Phase 1 : Bash & Linux
-        Q1 2024 : Bash Basics
-        Q1 2024 : Linux System Admin
-        Q1 2024 : Backup Automation
-        Q2 2024 : Advanced Scripting
-    section Phase 2 : Cloud & Containers
-        Q2 2024 : AWS Fundamentals
-        Q2 2024 : Docker Essentials
-        Q3 2024 : Kubernetes Basics
-        Q3 2024 : Cloud Automation
-    section Phase 3 : DevOps Practices
-        Q3 2024 : CI/CD Pipelines
-        Q4 2024 : Monitoring Stack
-        Q4 2024 : Infrastructure as Code
-        Q4 2024 : Project Portfolio
+    title My DevOps Evolution Path
+    section Phase 1: Foundations
+        Jan - Feb 2026 : Bash Scripting Basics : Linux System Admin
+        Mar 2026 : Backup Automation Scripting
+    section Phase 2: Cloud & Containers
+        Apr - Jun 2026 : AWS Fundamentals : Docker Essentials
+        Jul - Aug 2026 : Kubernetes Basics : Cloud Automation
+    section Phase 3: Advanced DevOps
+        Sep - Oct 2026 : CI/CD Pipelines : Infrastructure as Code
+        Nov - Dec 2026 : Monitoring Stack : Portfolio Projects
 ```
 
 ---
