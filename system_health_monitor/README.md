@@ -1,4 +1,4 @@
-# 🖥️ System Health Monitor Script
+<h1 align='center> # 🖥️ System Health Monitor Script </h1>
 
 <div align="center">
   
