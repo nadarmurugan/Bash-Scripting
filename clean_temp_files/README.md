@@ -1,138 +1,167 @@
-<h1 algin="center">🔥 Temp File Cleaner - Aggressive System Cleanup </h1>
+# 🔥 Temp File Annihilator - Ultimate System Cleaner
 
 <div align="center">
 
-<img src="https://svg-banners.vercel.app/api?type=glitch&text1=Temp%20File%20Janitor&text2=Automated%20Disk%20Space%20Recovery&width=1200&height=300" alt="Temp Cleaner Banner">
+![Banner Animation](https://svg-banners.vercel.app/api?type=typeWriter&text1=🔥%20TEMP%20FILE%20ANNIHILATOR&text2=Zero%20Tolerance%20for%20Digital%20Clutter&width=1400&height=400)
 
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Automation](https://img.shields.io/badge/Automation-FF6B6B?style=for-the-badge&logo=robot&logoColor=white)
-![Cron](https://img.shields.io/badge/Cron-FFD166?style=for-the-badge&logo=linux&logoColor=black)
+![Warning](https://img.shields.io/badge/⚠️_EXTREME_CAUTION-FF0000?style=for-the-badge&logo=warning&logoColor=white)
 
-**"When storage anxiety strikes, this script fights back!"**  
-*An aggressive but efficient temporary file cleaner for Linux systems*
+**"When storage anxiety strikes, this script fights back!"**
 
 </div>
 
 ---
 
-## 🧹 What Does This Script Do?
+## 📋 Table of Contents
 
-This Bash script performs **deep cleaning** of your Linux system by removing all temporary files from two critical locations:
-
-### 🎯 **Target Areas:**
-
-```bash
-📍 /tmp/*          # System-wide temporary directory
-📍 ~/.cache/*      # User-specific cache directory
-```
-
-### ⚡ **One Command Magic:**
-```bash
-# Before running: System with clutter
-📦 /tmp/        - 2.4 GB
-📦 ~/.cache/    - 1.8 GB
-Total: 4.2 GB of temporary data
-
-# After running: Fresh and clean
-🧼 /tmp/        - 0.0 GB  
-🧼 ~/.cache/    - 0.0 GB
-Recovered: 4.2 GB of disk space!
-```
+- [✨ Features](#-features)
+- [🎯 What It Does](#-what-it-does)
+- [🚨 Warning](#-warning)
+- [⚡ Quick Start](#-quick-start)
+- [📜 Script](#-script)
+- [⏰ Automation](#-automation)
+- [🛡️ Safe Alternative](#️-safe-alternative)
+- [📊 Monitoring](#-monitoring)
+- [❓ FAQ](#-faq)
+- [📝 License](#-license)
 
 ---
 
-## 🚨 **DANGER ZONE - READ THIS FIRST!**
+## ✨ Features
 
 <div align="center">
-  
-![Warning](https://img.shields.io/badge/⚠️_EXTREME_CAUTION_REQUIRED-FF0000?style=for-the-badge&logo=warning&logoColor=white)
+
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 🚀 **Instant Cleanup** | Removes all temp files in seconds | ✅ Working |
+| ⏰ **Automated** | Schedule with cron for daily cleaning | ✅ Working |
+| 📊 **Space Recovery** | Reclaims gigabytes of storage | ✅ Working |
+| 🛡️ **Safe Mode** | Optional age-based deletion | ✅ Working |
+| 📝 **Logging** | Detailed logs of all operations | ✅ Working |
 
 </div>
 
-### ❗ **What This Script WILL DELETE:**
-- **All application caches** (browser, package managers, etc.)
-- **Session data** for some applications
-- **Thumbnail caches** and previews
-- **Downloaded updates** waiting to install
-- **Socket files** (though in-use ones will be protected by OS)
-- **Lock files** (could cause application issues)
-- **Anything and everything** in `/tmp/` and `~/.cache/`
+## 🎯 What It Does
 
-### ⚠️ **Potential Side Effects:**
-1. **Applications may run slower** on next launch (caches rebuilt)
-2. **Some apps may crash** if they need cache files
-3. **Browser will need to rebuild** cache and thumbnails
-4. **Package managers** will need to re-download metadata
-5. **Active sessions** might be logged out
-
-### 🛡️ **Safety Recommendations:**
+### Target Areas:
 ```bash
-# 🟢 SAFE: Run during system maintenance windows
-# 🔴 DANGEROUS: Run during active work hours
-# 🟡 BETTER: Use the "Safer Alternative" script below
+/tmp/*          # System temporary files
+~/.cache/*      # User application caches
 ```
 
----
-
-## 📁 Script Contents
-
-### **clean_temp.sh**
+### Space Recovery Example:
 ```bash
-#!/bin/bash
-# clean_temp.sh
+📊 BEFORE:
+├── /tmp:    2.4 GB
+└── ~/.cache: 1.8 GB
+Total: 4.2 GB
 
-echo "Cleaning temporary files..."
-rm -rf /tmp/* 2>/dev/null
-rm -rf ~/.cache/* 2>/dev/null
-echo "Temporary files cleaned!"
+🎯 AFTER:
+├── /tmp:    0.0 GB
+└── ~/.cache: 0.0 GB
+✅ Recovered: 4.2 GB!
 ```
 
-### 🛠️ **Technical Breakdown:**
+## 🚨 Warning
 
-| Component | Purpose | Risk Level |
-|-----------|---------|------------|
-| `rm -rf /tmp/*` | Recursively force-deletes all in /tmp | ⚠️ **High** |
-| `2>/dev/null` | Silences error messages | 🟡 **Medium** |
-| `~/.cache/*` | Targets user-specific caches | ⚠️ **High** |
-| No validation | Doesn't check what it's deleting | 🔴 **Critical** |
+<div align="center">
 
----
+![Danger](https://img.shields.io/badge/█▒▒▒▒▒▒▒▒▒_CRITICAL_WARNING_▒▒▒▒▒▒▒▒▒█-FF0000?style=for-the-badge)
 
-## ⚙️ Installation & Usage
+</div>
 
-### **Step 1: Download the Script**
+### ⚠️ **This script will delete:**
+- All files in `/tmp/` (system temporary files)
+- All files in `~/.cache/` (user cache files)
+- **No confirmation asked!**
+- **No recovery possible!**
+
+### 🔴 **Potential Issues:**
+- Applications may run slower on next launch
+- Some apps might crash or lose session data
+- Package managers need to re-download metadata
+- Browser caches will be cleared
+
+### ✅ **Safe Usage Guidelines:**
+- Backup important data first
+- Run during maintenance windows (2-5 AM)
+- Close all applications before running
+- Test in a safe environment first
+
+## ⚡ Quick Start
+
+### 1. Download & Install:
 ```bash
-# Clone or download the script
-wget https://raw.githubusercontent.com/yourusername/scripts/main/clean_temp.sh
-```
+# Download the script
+wget -O clean_temp.sh https://raw.githubusercontent.com/yourrepo/clean_temp/main/clean_temp.sh
 
-### **Step 2: Make it Executable**
-```bash
+# Make it executable
 chmod +x clean_temp.sh
 ```
 
-### **Step 3: Run It (With Caution!)**
+### 2. Test First (Dry Run):
 ```bash
-# Dry run first (doesn't actually delete)
-echo "Files in /tmp/: $(find /tmp -type f | wc -l)"
-echo "Files in ~/.cache/: $(find ~/.cache -type f | wc -l)"
+# See what would be deleted
+echo "Files in /tmp: $(find /tmp -type f 2>/dev/null | wc -l)"
+echo "Files in cache: $(find ~/.cache -type f 2>/dev/null | wc -l)"
+```
 
-# Actual execution (TAKE BACKUP FIRST!)
+### 3. Run the Script:
+```bash
+# Execute with caution!
 ./clean_temp.sh
 ```
 
-### **Step 4: Verify Results**
+## 📜 Script
+
+### **Main Script (Aggressive Cleaner):**
 ```bash
-# Check freed space
-df -h | grep -E "Filesystem|/$"
+#!/bin/bash
+# clean_temp.sh - Aggressive temporary file cleaner
+
+echo "🔥 INITIATING TEMP FILE CLEANUP..."
+echo "=================================="
+
+# Store before state
+BEFORE_TMP=$(find /tmp -type f 2>/dev/null | wc -l)
+BEFORE_CACHE=$(find ~/.cache -type f 2>/dev/null | wc -l)
+
+echo "📊 BEFORE:"
+echo "  Files in /tmp:    $BEFORE_TMP"
+echo "  Files in ~/.cache: $BEFORE_CACHE"
+echo ""
+
+# The cleanup (AGGRESSIVE MODE)
+echo "🧹 CLEANING..."
+rm -rf /tmp/* 2>/dev/null
+rm -rf ~/.cache/* 2>/dev/null
+
+# Store after state
+AFTER_TMP=$(find /tmp -type f 2>/dev/null | wc -l)
+AFTER_CACHE=$(find ~/.cache -type f 2>/dev/null | wc -l)
+
+echo ""
+echo "📊 AFTER:"
+echo "  Files in /tmp:    $AFTER_TMP"
+echo "  Files in ~/.cache: $AFTER_CACHE"
+echo ""
+echo "✅ CLEANUP COMPLETE!"
+echo "🎉 Files removed: $((BEFORE_TMP + BEFORE_CACHE - AFTER_TMP - AFTER_CACHE))"
 ```
 
----
+### **Script Breakdown:**
+```bash
+rm -rf /tmp/*          # Force delete everything in /tmp
+2>/dev/null            # Suppress error messages
+~/.cache/*             # User-specific cache directory
+```
 
-## ⏰ **Automation with Cron (Daily at 2 AM)**
+## ⏰ Automation
 
-### **Option 1: Basic Daily Cleanup**
+### **Daily Cleanup (2 AM):**
 ```bash
 # Edit crontab
 crontab -e
@@ -141,45 +170,27 @@ crontab -e
 0 2 * * * /path/to/clean_temp.sh >> /var/log/temp_clean.log 2>&1
 ```
 
-### **Option 2: Smart Cleanup with Disk Check**
+### **Smart Cleanup (Only when disk > 80% full):**
 ```bash
-# Only run if disk is over 80% full
-0 2 * * * [ $(df / --output=pcent | tail -1 | tr -dc '0-9') -gt 80 ] && /path/to/clean_temp.sh >> /var/log/temp_clean.log 2>&1
+# Smart cron job
+0 * * * * [ $(df / --output=pcent | tail -1 | tr -dc '0-9') -gt 80 ] && /path/to/clean_temp.sh >> /var/log/temp_clean.log 2>&1
 ```
 
-### **Option 3: Weekly with Notifications**
+### **Weekly with Notification:**
 ```bash
-# Every Sunday at 2 AM, with email notification
-0 2 * * 0 /path/to/clean_temp.sh && echo "Temp cleanup completed on $(date)" | mail -s "System Cleanup Report" admin@example.com
+# Every Sunday at 2 AM
+0 2 * * 0 /path/to/clean_temp.sh && echo "Cleanup completed $(date)" | mail -s "Temp Cleanup Report" admin@example.com
 ```
 
-### **Cron Job Breakdown:**
-```
-┌───────────── minute (0)
-│ ┌───────────── hour (2)
-│ │ ┌───────────── day of month (* = any)
-│ │ │ ┌───────────── month (* = any)
-│ │ │ │ ┌───────────── day of week (* = any)
-│ │ │ │ │
-0 2 * * * /path/to/clean_temp.sh
-│                    │
-│                    └─ Script path
-└─ 2 AM daily
-```
+## 🛡️ Safe Alternative
 
----
-
-## 🔄 **Safer Alternative Script**
-
-Because the original script is **VERY AGGRESSIVE**, here's a safer version:
-
-### **safe_clean_temp.sh**
+### **Safer Version (Age-based cleanup):**
 ```bash
 #!/bin/bash
-# SAFE VERSION - Cleans only old files
+# safe_clean_temp.sh - Safer alternative
 
-echo "🧹 Starting SAFE temporary file cleanup..."
-echo "=========================================="
+echo "🧹 SAFE TEMP CLEANUP STARTED..."
+echo "================================"
 
 # Clean files older than 7 days in /tmp
 echo "Cleaning /tmp files older than 7 days..."
@@ -191,282 +202,157 @@ echo "Cleaning cache files older than 30 days..."
 find ~/.cache -type f -mtime +30 -delete 2>/dev/null
 echo "✅ Cache cleanup complete"
 
-# Calculate freed space (approximate)
-FREED_SPACE=$(find /tmp ~/.cache -type f -mtime +7 2>/dev/null | xargs du -ch 2>/dev/null | grep total | cut -f1)
-echo "🎉 Estimated space to be freed: ${FREED_SPACE:-Unknown}"
-
-echo "=========================================="
-echo "🧼 Safe cleanup completed!"
+# Estimate freed space
+echo ""
+echo "🎉 Safe cleanup completed!"
 ```
 
 ### **Safer Cron Job:**
 ```bash
-# Run safer version daily at 3 AM
+# Run safe version daily at 3 AM
 0 3 * * * /path/to/safe_clean_temp.sh >> /var/log/safe_clean.log 2>&1
 ```
 
----
+## 📊 Monitoring
 
-## 📊 **Monitoring & Logging**
-
-### **Create a Logging Wrapper:**
+### **Enhanced Script with Logging:**
 ```bash
 #!/bin/bash
-# clean_temp_with_logging.sh
+# clean_temp_logging.sh - With full monitoring
 
-LOG_FILE="/var/log/temp_cleanup_$(date +%Y%m%d).log"
+LOG_FILE="/var/log/temp_cleanup_$(date +%Y%m%d_%H%M%S).log"
 
 {
-    echo "🧹 ========================================="
-    echo "   Temp Cleanup Started: $(date)"
-    echo "   User: $(whoami)"
-    echo "   System: $(uname -a)"
-    echo "=========================================="
+    echo "🧹 TEMP CLEANUP REPORT"
+    echo "======================"
+    echo "Time: $(date)"
+    echo "User: $(whoami)"
+    echo "Host: $(hostname)"
+    echo ""
     
-    # Record before state
+    # Before cleanup
     echo "📊 BEFORE CLEANUP:"
-    echo "Files in /tmp: $(find /tmp -type f 2>/dev/null | wc -l)"
-    echo "Files in ~/.cache: $(find ~/.cache -type f 2>/dev/null | wc -l)"
+    TMP_SIZE=$(du -sh /tmp 2>/dev/null || echo "0B")
+    CACHE_SIZE=$(du -sh ~/.cache 2>/dev/null || echo "0B")
+    echo "  /tmp size:    $TMP_SIZE"
+    echo "  Cache size:   $CACHE_SIZE"
+    echo ""
     
-    # Run cleanup
+    # Perform cleanup
     echo "🧽 CLEANING..."
     rm -rf /tmp/* 2>/dev/null
     rm -rf ~/.cache/* 2>/dev/null
+    echo "✅ Cleanup completed!"
+    echo ""
     
-    # Record after state
+    # After cleanup
     echo "📊 AFTER CLEANUP:"
-    echo "Files in /tmp: $(find /tmp -type f 2>/dev/null | wc -l)"
-    echo "Files in ~/.cache: $(find ~/.cache -type f 2>/dev/null | wc -l)"
+    echo "  /tmp size:    $(du -sh /tmp 2>/dev/null || echo '0B')"
+    echo "  Cache size:   $(du -sh ~/.cache 2>/dev/null || echo '0B')"
     
-    echo "=========================================="
-    echo "✅ Cleanup completed: $(date)"
 } | tee -a "$LOG_FILE"
 ```
 
----
-
-## 🎯 **When to Use This Script**
-
-### **✅ Appropriate Scenarios:**
-- **Before system backups** to reduce backup size
-- **During maintenance windows** when no users are active
-- **On CI/CD build servers** between builds
-- **On development machines** before major updates
-- **When disk space is critically low** (<5% free)
-
-### **❌ Inappropriate Scenarios:**
-- **During business hours** on production servers
-- **On database servers** with active transactions
-- **When applications are running** critical jobs
-- **Without testing** in a staging environment first
-
----
-
-## 🚀 **Advanced: Enterprise-Grade Version**
-
-For production systems, consider this enhanced version:
-
-```bash
-#!/bin/bash
-# enterprise_temp_cleaner.sh
-
-set -e  # Exit on error
-set -u  # Treat unset variables as errors
-
-# Configuration
-BACKUP_DIR="/var/backups/temp_files"
-RETENTION_DAYS=3
-LOG_DIR="/var/log/cleanup"
-EMAIL_ADMIN="admin@example.com"
-
-# Functions
-backup_before_delete() {
-    echo "📦 Creating backup of files to be deleted..."
-    mkdir -p "$BACKUP_DIR/$(date +%Y%m%d)"
-    cp -r /tmp/* "$BACKUP_DIR/$(date +%Y%m%d)/tmp/" 2>/dev/null || true
-    cp -r ~/.cache/* "$BACKUP_DIR/$(date +%Y%m%d)/cache/" 2>/dev/null || true
-}
-
-clean_old_backups() {
-    echo "🗑️  Removing backups older than $RETENTION_DAYS days..."
-    find "$BACKUP_DIR" -type d -mtime +$RETENTION_DAYS -exec rm -rf {} \; 2>/dev/null
-}
-
-send_report() {
-    local status=$1
-    echo "📧 Sending report to $EMAIL_ADMIN..."
-    # Add email sending logic here
-}
-
-# Main execution
-main() {
-    echo "🚀 Enterprise Temp Cleanup Started"
-    
-    backup_before_delete
-    clean_old_backups
-    
-    echo "🧹 Cleaning temporary directories..."
-    rm -rf /tmp/* 2>/dev/null
-    rm -rf ~/.cache/* 2>/dev/null
-    
-    echo "✅ Cleanup completed successfully"
-    send_report "success"
-}
-
-# Error handling
-trap 'echo "❌ Script failed at line $LINENO"; send_report "failed"; exit 1' ERR
-
-main "$@"
-```
-
----
-
-## 📈 **Performance Impact Analysis**
-
-| Metric | Before Cleanup | After Cleanup | Impact |
-|--------|---------------|---------------|---------|
-| **Disk Space** | Higher usage | ✅ Significant reduction | Positive |
-| **App Launch** | Faster (cached) | ⚠️ Slower first time | Temporary negative |
-| **System Boot** | Normal | ✅ Slightly faster | Positive |
-| **Backup Size** | Larger | ✅ Much smaller | Positive |
-| **SSD Wear** | Higher | ✅ Reduced writes | Positive |
-
----
-
-## 🧪 **Testing Recommendations**
-
-### **1. Dry Run First:**
-```bash
-# See what would be deleted
-find /tmp -type f -exec echo "Would delete: {}" \;
-```
-
-### **2. Test on Non-Critical System:**
-```bash
-# Use a VM or container first
-docker run -it ubuntu bash
-# Test script inside container
-```
-
-### **3. Create Recovery Plan:**
-```bash
-# Backup before running
-tar -czf /backup/tmp_backup_$(date +%Y%m%d).tar.gz /tmp/
-tar -czf /backup/cache_backup_$(date +%Y%m%d).tar.gz ~/.cache/
-```
-
----
-
-## 🤔 **FAQ - Frequently Asked Questions**
+## ❓ FAQ
 
 ### **Q: Will this break my system?**
-**A:** It won't break the OS itself, but running applications might have issues. Best to run when few apps are active.
+**A:** No, but running applications might have issues. Run when few apps are active.
 
 ### **Q: How much space will I recover?**
-**A:** Typically 500MB-5GB depending on usage. Check with `du -sh /tmp ~/.cache` before running.
+**A:** Typically 500MB-5GB. Check with `du -sh /tmp ~/.cache` before running.
 
 ### **Q: Can I recover deleted files?**
-**A:** No! Linux immediately reclaims the space. There's no "Recycle Bin" for `rm -rf`.
+**A:** No! Linux immediately reclaims the space. There's no "Recycle Bin".
 
 ### **Q: Is there a GUI alternative?**
-**A:** Yes! Tools like `bleachbit`, `stacer`, or `sudo apt autoclean` are safer GUI alternatives.
+**A:** Yes! Try `bleachbit`, `stacer`, or `sudo apt autoclean` for safer options.
 
 ### **Q: Should I run this on a server?**
-**A:** Only during maintenance windows and with proper backups. Consider the "safer alternative" for servers.
+**A:** Only during maintenance windows with proper backups. Use the "safe alternative" for servers.
 
----
+## 🎯 When to Use
 
-## 📚 **Related Tools & Commands**
+### ✅ **Good Times:**
+- Before system backups
+- During scheduled maintenance (2-5 AM)
+- On CI/CD servers between builds
+- When disk space is critically low (<5%)
+- Before major system updates
 
-```bash
-# Less aggressive alternatives
-sudo apt autoclean          # Cleans package cache
-sudo apt autoremove         # Removes unused packages
-sudo journalctl --vacuum-time=3d  # Cleans system logs
-docker system prune         # Cleans Docker resources
-npm cache clean --force     # Cleans npm cache
-```
+### ❌ **Bad Times:**
+- During business hours
+- On production servers with active users
+- When critical applications are running
+- Without testing first
+- Without backups
 
----
-
-## 🏆 **Best Practices Checklist**
-
-Before running this script, ask yourself:
-
-- [ ] **Are critical applications closed?**
-- [ ] **Is it a maintenance window?**
-- [ ] **Have I taken backups?**
-- [ ] **Have I tested on a non-production system?**
-- [ ] **Do I have a recovery plan?**
-- [ ] **Have I notified users (if applicable)?**
-- [ ] **Am I ready for slower app launches tomorrow?**
-
----
-
-<div align="center">
-
-## ⚡ **Quick Start - The 2-Minute Setup**
-
-```bash
-# 1. Download
-wget -O /usr/local/bin/clean_temp.sh https://bit.ly/temp-cleaner-script
-
-# 2. Make executable
-chmod +x /usr/local/bin/clean_temp.sh
-
-# 3. Schedule at 2 AM daily
-(crontab -l 2>/dev/null; echo "0 2 * * * /usr/local/bin/clean_temp.sh") | crontab -
-
-# 4. Verify
-crontab -l | grep clean_temp
-```
-
-**🎉 Done! Your system will now auto-clean daily at 2 AM.**
-
----
-
-## 🎨 **Visual Workflow**
-
-```mermaid
-graph TD
-    A[🕑 2:00 AM Daily] --> B{Cron Trigger};
-    B --> C[Run clean_temp.sh];
-    C --> D[Delete /tmp/*];
-    C --> E[Delete ~/.cache/*];
-    D --> F[✅ Log Results];
-    E --> F;
-    F --> G[📧 Send Report];
-    G --> H[🔄 Wait for Next Day];
-```
-
----
-
-## 📞 **Need Help or Found a Bug?**
-
-<div align="center">
-
-![GitHub Issues](https://img.shields.io/badge/Report_Issues-181717?style=for-the-badge&logo=github&logoColor=white)
-![Discord](https://img.shields.io/badge/Join_Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)
-
-**Remember:** With great power (`rm -rf`) comes great responsibility!
-
-⭐ **Star this project if it saved your disk space!** ⭐
-
-</div>
-
----
-
-## 📜 **License & Disclaimer**
+## 📝 License
 
 ```text
 ⚠️ DISCLAIMER: Use at your own risk!
 This script is provided "AS IS" without warranty of any kind.
 The author is not responsible for any data loss or system issues.
 
-📄 MIT License - You're free to use, modify, and distribute,
+MIT License - You're free to use, modify, and distribute,
 but please don't blame me if your system breaks! 😅
 ```
 
-**Happy Cleaning!** 🧹✨
+---
+
+<div align="center">
+
+## 🚀 Ready to Clean?
+
+```bash
+# One-liner to download and run (BE CAREFUL!)
+curl -sL https://bit.ly/temp-cleaner | bash
+```
+
+![Final](https://svg-banners.vercel.app/api?type=rainbow&text1=Remember%3A%20With%20Great%20Power%20Comes%20Great%20Responsibility&text2=Backup%20First%20%7C%20Test%20First%20%7C%20Schedule%20Wisely&width=1200&height=150)
+
+**⭐ Star this project if it saved your disk space! ⭐**
+
+**Happy Cleaning! 🧹✨**
+
+</div>
+
+---
+
+## 🔗 Quick Reference
+
+### **Common Commands:**
+```bash
+# Check temp file sizes
+du -sh /tmp ~/.cache
+
+# Count temp files
+find /tmp ~/.cache -type f 2>/dev/null | wc -l
+
+# Safer alternatives
+sudo apt autoclean          # Clean package cache
+sudo apt autoremove         # Remove unused packages
+sudo journalctl --vacuum-time=3d  # Clean old logs
+```
+
+### **Recovery Commands:**
+```bash
+# Check disk space before/after
+df -h /
+
+# Monitor cleanup logs
+tail -f /var/log/temp_clean.log
+
+# Check system status after cleanup
+uptime
+free -h
+```
+
+---
+
+<div align="center">
+
+**Made with ❤️ for Linux Admins who hate clutter**
+
+**Remember: A clean system is a happy system!**
 
 </div>
