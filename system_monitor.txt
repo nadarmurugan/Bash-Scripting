@@ -1,0 +1,187 @@
+Here is a **simple, clean, and properly documented `README.md`** for your project 👇
+(You can copy-paste this into your `README.md` file)
+
+---
+
+# 🖥 Linux System Monitoring Script (Bash + Cron)
+
+## 📌 Project Overview
+
+This is a simple Bash-based system monitoring script that logs basic system performance metrics into a log file.
+
+The script collects:
+
+* 📊 System Load Average (1, 5, 15 minutes)
+* 🧠 Memory Usage
+* 💾 Disk Usage (Root partition)
+* 🕒 Timestamp for each entry
+
+It is designed to be automated using **cron** for continuous monitoring.
+
+---
+
+## 📂 Project Structure
+
+```
+bash/
+│── system_monitor.sh
+│── system_data.log
+│── README.md
+```
+
+---
+
+## 📜 Script Explanation
+
+The script:
+
+1. Defines a log file path.
+2. Appends the current date and time.
+3. Extracts:
+
+   * Load average using `uptime`
+   * Memory usage using `free -h`
+   * Disk usage using `df -h /`
+4. Appends all output to a log file.
+5. Keeps historical data using append (`>>`).
+
+---
+
+## ▶ How to Run the Script Manually
+
+### Step 1: Give Execute Permission
+
+```bash
+chmod +x system_monitor.sh
+```
+
+### Step 2: Run Script
+
+```bash
+./system_monitor.sh
+```
+
+### Step 3: Check Output
+
+```bash
+cat system_data.log
+```
+
+Example Output:
+
+```
+----- Mon Feb 17 19:30:00 IST 2026 -----
+Load: 0.12, 0.08, 0.05
+Memory Used: 1.3G
+Disk Used: 42%
+```
+
+---
+
+# ⏰ Automating Using Cron (Every 2 Minutes)
+
+## Step 1: Get Full Path of Script
+
+```bash
+pwd
+```
+
+Example:
+
+```
+/home/murugan/bash
+```
+
+Full script path:
+
+```
+/home/murugan/bash/system_monitor.sh
+```
+
+---
+
+## Step 2: Open Crontab
+
+```bash
+crontab -e
+```
+
+---
+
+## Step 3: Add This Line
+
+```bash
+*/2 * * * * /home/murugan/bash/system_monitor.sh
+```
+
+---
+
+## 🧠 Cron Format Explanation
+
+```
+*/2  → Every 2 minutes
+*    → Every hour
+*    → Every day of month
+*    → Every month
+*    → Every day of week
+```
+
+This runs the script every 2 minutes.
+
+---
+
+## Step 4: Verify Cron Job
+
+```bash
+crontab -l
+```
+
+---
+
+## Step 5: Live Monitoring
+
+To watch the log file live:
+
+```bash
+tail -f /home/murugan/bash/system_data.log
+```
+
+---
+
+# 🚀 Skills Demonstrated
+
+* Linux system monitoring
+* Bash scripting
+* Text processing using `awk`
+* Log management
+* Cron job scheduling
+* Automation fundamentals
+
+---
+
+# 🎯 Interview Explanation
+
+This project demonstrates how to:
+
+* Monitor system health using native Linux tools
+* Automate recurring tasks using cron
+* Maintain historical logs for performance tracking
+* Implement basic DevOps automation practices
+
+---
+
+# 📌 Future Improvements (Optional)
+
+* Log rotation
+* Threshold-based alerts
+* Email notifications
+* Daily summary report generation
+* Integration with monitoring tools
+
+---
+
+**Author:** Jeyamurugan Nadar
+**Role:** DevOps / Cloud Engineer Aspirant
+
+---
+
